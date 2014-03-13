@@ -1,0 +1,681 @@
+<?xml version="1.0"?>
+<MvProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="MvProject">
+  <IsShip>true</IsShip>
+  <ModelName>HMG-N12</ModelName>
+  <FileName>HI-1111-MM</FileName>
+  <ShipInfo>
+    <ProjectNo>PJT NO</ProjectNo>
+    <DrawingNo>HI-1111-MM</DrawingNo>
+    <Rating>6.6KV, 60Hz, 50KA/1SEC, 3150A : LNG</Rating>
+    <EplanTemplate>선박 템플릿.zw9</EplanTemplate>
+    <MarginRight>0</MarginRight>
+    <MarginBottom>0</MarginBottom>
+    <PanelName>6.6KV MAIN SWITCHBOARD</PanelName>
+    <Yard>HI</Yard>
+    <ShipNo>1111</ShipNo>
+    <Code>MM</Code>
+    <Class>AAA
+BBB
+CCC</Class>
+  </ShipInfo>
+  <IsDoubleLayer>false</IsDoubleLayer>
+  <DataSet>
+    <xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+      <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:Locale="ko-KR">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="Group">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="GroupID" msdata:AutoIncrement="true" type="xs:int" />
+                  <xs:element name="Visible" type="xs:boolean" default="true" />
+                  <xs:element name="GroupNo" type="xs:string" default="" />
+                  <xs:element name="GroupName" type="xs:string" default="" />
+                  <xs:element name="FeederQty" type="xs:int" default="1" />
+                  <xs:element name="Rating" type="xs:string" default="" />
+                  <xs:element name="IncomingType" type="xs:string" default="" minOccurs="0" />
+                  <xs:element name="LeftToRight" type="xs:boolean" default="true" />
+                  <xs:element name="IncomingPtExists" type="xs:boolean" default="true" />
+                  <xs:element name="BusPtExists" type="xs:boolean" default="true" />
+                  <xs:element name="BusDuctExists" type="xs:boolean" default="true" />
+                  <xs:element name="IncomingPt" type="xs:string" default="" />
+                  <xs:element name="KA" type="xs:string" default="" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Feeder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FeederID" msdata:AutoIncrement="true" type="xs:int" />
+                  <xs:element name="GroupID" type="xs:int" />
+                  <xs:element name="GroupNo" type="xs:string" default="" />
+                  <xs:element name="PanelNo" type="xs:string" default="" />
+                  <xs:element name="FeederNo" type="xs:string" default="" />
+                  <xs:element name="FeederType" type="xs:string" default="" />
+                  <xs:element name="PanelName1" type="xs:string" default="" />
+                  <xs:element name="PanelName2" type="xs:string" default="" />
+                  <xs:element name="PanelName3" type="xs:string" default="" />
+                  <xs:element name="ConsumerKW" type="xs:string" default="" />
+                  <xs:element name="ConsumerA" type="xs:string" default="" />
+                  <xs:element name="CableSqHHI" type="xs:string" default="" />
+                  <xs:element name="CableSqYard" type="xs:string" default="" />
+                  <xs:element name="TypicalDrawingNo" type="xs:string" default="" />
+                  <xs:element name="CableClamp" type="xs:string" default="" />
+                  <xs:element name="ZctType" type="xs:string" default="" />
+                  <xs:element name="Width" type="xs:int" default="-1" />
+                  <xs:element name="Depth" type="xs:int" default="-1" />
+                  <xs:element name="Height" type="xs:int" default="-1" />
+                  <xs:element name="PanelX" type="xs:int" default="-1" />
+                  <xs:element name="PanelY" type="xs:int" default="-1" />
+                  <xs:element name="IsSelected" type="xs:boolean" default="false" />
+                  <xs:element name="IsNew" type="xs:boolean" default="false" />
+                  <xs:element name="IsDone" type="xs:boolean" default="false" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1">
+          <xs:selector xpath=".//mstns:Group" />
+          <xs:field xpath="mstns:GroupID" />
+        </xs:unique>
+        <xs:keyref name="FK_Group_Feeder" refer="Constraint1">
+          <xs:selector xpath=".//mstns:Feeder" />
+          <xs:field xpath="mstns:GroupID" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+      <DataSet1 xmlns="http://tempuri.org/DataSet1.xsd">
+        <Group diffgr:id="Group1" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+          <GroupID>0</GroupID>
+          <Visible>true</Visible>
+          <GroupNo />
+          <GroupName />
+          <FeederQty>22</FeederQty>
+          <Rating />
+          <IncomingType />
+          <LeftToRight>true</LeftToRight>
+          <IncomingPtExists>true</IncomingPtExists>
+          <BusPtExists>true</BusPtExists>
+          <BusDuctExists>true</BusDuctExists>
+          <IncomingPt />
+          <KA />
+        </Group>
+        <Feeder diffgr:id="Feeder1" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+          <FeederID>0</FeederID>
+          <GroupID>0</GroupID>
+          <GroupNo />
+          <PanelNo />
+          <FeederNo>FEEDER_001</FeederNo>
+          <FeederType>BOW_THRUSTER</FeederType>
+          <PanelName1>BOW_THRUSTER</PanelName1>
+          <PanelName2>PANEL NAME2</PanelName2>
+          <PanelName3 />
+          <ConsumerKW>CONSUMER KW</ConsumerKW>
+          <ConsumerA>CONSUMER A1</ConsumerA>
+          <CableSqHHI>CABLE SQ (HHI)</CableSqHHI>
+          <CableSqYard>CABLE SQ Consumer1</CableSqYard>
+          <TypicalDrawingNo>TYPICAL DWG NO1</TypicalDrawingNo>
+          <CableClamp>CABLE CLAMP</CableClamp>
+          <ZctType />
+          <Width>0</Width>
+          <Depth>0</Depth>
+          <Height>0</Height>
+          <PanelX>-1</PanelX>
+          <PanelY>-1</PanelY>
+          <IsSelected>false</IsSelected>
+          <IsNew>false</IsNew>
+          <IsDone>false</IsDone>
+        </Feeder>
+        <Feeder diffgr:id="Feeder2" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+          <FeederID>1</FeederID>
+          <GroupID>0</GroupID>
+          <GroupNo />
+          <PanelNo />
+          <FeederNo>FEEDER_002</FeederNo>
+          <FeederType>BUS_TIE</FeederType>
+          <PanelName1>BUS_TIE</PanelName1>
+          <PanelName2>PANEL NAME3</PanelName2>
+          <PanelName3 />
+          <ConsumerKW>CONSUMER KW</ConsumerKW>
+          <ConsumerA>CONSUMER A2</ConsumerA>
+          <CableSqHHI>CABLE SQ (HHI)</CableSqHHI>
+          <CableSqYard>CABLE SQ Consumer2</CableSqYard>
+          <TypicalDrawingNo>TYPICAL DWG NO2</TypicalDrawingNo>
+          <CableClamp>CABLE CLAMP</CableClamp>
+          <ZctType />
+          <Width>0</Width>
+          <Depth>0</Depth>
+          <Height>0</Height>
+          <PanelX>-1</PanelX>
+          <PanelY>-1</PanelY>
+          <IsSelected>false</IsSelected>
+          <IsNew>false</IsNew>
+          <IsDone>false</IsDone>
+        </Feeder>
+        <Feeder diffgr:id="Feeder3" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+          <FeederID>2</FeederID>
+          <GroupID>0</GroupID>
+          <GroupNo />
+          <PanelNo />
+          <FeederNo>FEEDER_003</FeederNo>
+          <FeederType>GENERATOR</FeederType>
+          <PanelName1>GENERATOR</PanelName1>
+          <PanelName2>PANEL NAME4</PanelName2>
+          <PanelName3 />
+          <ConsumerKW>CONSUMER KW</ConsumerKW>
+          <ConsumerA>CONSUMER A3</ConsumerA>
+          <CableSqHHI>CABLE SQ (HHI)</CableSqHHI>
+          <CableSqYard>CABLE SQ Consumer3</CableSqYard>
+          <TypicalDrawingNo>TYPICAL DWG NO3</TypicalDrawingNo>
+          <CableClamp>CABLE CLAMP</CableClamp>
+          <ZctType />
+          <Width>0</Width>
+          <Depth>0</Depth>
+          <Height>0</Height>
+          <PanelX>-1</PanelX>
+          <PanelY>-1</PanelY>
+          <IsSelected>false</IsSelected>
+          <IsNew>false</IsNew>
+          <IsDone>false</IsDone>
+        </Feeder>
+        <Feeder diffgr:id="Feeder4" msdata:rowOrder="3" diffgr:hasChanges="inserted">
+          <FeederID>3</FeederID>
+          <GroupID>0</GroupID>
+          <GroupNo />
+          <PanelNo />
+          <FeederNo>FEEDER_004</FeederNo>
+          <FeederType>GPT</FeederType>
+          <PanelName1>GPT</PanelName1>
+          <PanelName2>PANEL NAME5</PanelName2>
+          <PanelName3 />
+          <ConsumerKW>CONSUMER KW</ConsumerKW>
+          <ConsumerA>CONSUMER A4</ConsumerA>
+          <CableSqHHI>CABLE SQ (HHI)</CableSqHHI>
+          <CableSqYard>CABLE SQ Consumer4</CableSqYard>
+          <TypicalDrawingNo>TYPICAL DWG NO4</TypicalDrawingNo>
+          <CableClamp>CABLE CLAMP</CableClamp>
+          <ZctType />
+          <Width>0</Width>
+          <Depth>0</Depth>
+          <Height>0</Height>
+          <PanelX>-1</PanelX>
+          <PanelY>-1</PanelY>
+          <IsSelected>false</IsSelected>
+          <IsNew>false</IsNew>
+          <IsDone>false</IsDone>
+        </Feeder>
+        <Feeder diffgr:id="Feeder5" msdata:rowOrder="4" diffgr:hasChanges="inserted">
+          <FeederID>4</FeederID>
+          <GroupID>0</GroupID>
+          <GroupNo />
+          <PanelNo />
+          <FeederNo>FEEDER_005</FeederNo>
+          <FeederType>RINGNET_SWBD</FeederType>
+          <PanelName1>RINGNET_SWBD</PanelName1>
+          <PanelName2>PANEL NAME6</PanelName2>
+          <PanelName3 />
+          <ConsumerKW>CONSUMER KW</ConsumerKW>
+          <ConsumerA>CONSUMER A5</ConsumerA>
+          <CableSqHHI>CABLE SQ (HHI)</CableSqHHI>
+          <CableSqYard>CABLE SQ Consumer5</CableSqYard>
+          <TypicalDrawingNo>TYPICAL DWG NO5</TypicalDrawingNo>
+          <CableClamp>CABLE CLAMP</CableClamp>
+          <ZctType />
+          <Width>0</Width>
+          <Depth>0</Depth>
+          <Height>0</Height>
+          <PanelX>-1</PanelX>
+          <PanelY>-1</PanelY>
+          <IsSelected>false</IsSelected>
+          <IsNew>false</IsNew>
+          <IsDone>false</IsDone>
+        </Feeder>
+        <Feeder diffgr:id="Feeder6" msdata:rowOrder="5" diffgr:hasChanges="inserted">
+          <FeederID>5</FeederID>
+          <GroupID>0</GroupID>
+          <GroupNo />
+          <PanelNo />
+          <FeederNo>FEEDER_006</FeederNo>
+          <FeederType>STEPDOWN</FeederType>
+          <PanelName1>STEPDOWN</PanelName1>
+          <PanelName2>PANEL NAME7</PanelName2>
+          <PanelName3 />
+          <ConsumerKW>CONSUMER KW</ConsumerKW>
+          <ConsumerA>CONSUMER A6</ConsumerA>
+          <CableSqHHI>CABLE SQ (HHI)</CableSqHHI>
+          <CableSqYard>CABLE SQ Consumer6</CableSqYard>
+          <TypicalDrawingNo>TYPICAL DWG NO6</TypicalDrawingNo>
+          <CableClamp>CABLE CLAMP</CableClamp>
+          <ZctType />
+          <Width>0</Width>
+          <Depth>0</Depth>
+          <Height>0</Height>
+          <PanelX>-1</PanelX>
+          <PanelY>-1</PanelY>
+          <IsSelected>false</IsSelected>
+          <IsNew>false</IsNew>
+          <IsDone>false</IsDone>
+        </Feeder>
+        <Feeder diffgr:id="Feeder7" msdata:rowOrder="6" diffgr:hasChanges="inserted">
+          <FeederID>6</FeederID>
+          <GroupID>0</GroupID>
+          <GroupNo />
+          <PanelNo />
+          <FeederNo>FEEDER_007</FeederNo>
+          <FeederType>SYNCHRO</FeederType>
+          <PanelName1>SYNCHRO</PanelName1>
+          <PanelName2>PANEL NAME8</PanelName2>
+          <PanelName3 />
+          <ConsumerKW>CONSUMER KW</ConsumerKW>
+          <ConsumerA>CONSUMER A7</ConsumerA>
+          <CableSqHHI>CABLE SQ (HHI)</CableSqHHI>
+          <CableSqYard>CABLE SQ Consumer7</CableSqYard>
+          <TypicalDrawingNo>TYPICAL DWG NO7</TypicalDrawingNo>
+          <CableClamp>CABLE CLAMP</CableClamp>
+          <ZctType />
+          <Width>0</Width>
+          <Depth>0</Depth>
+          <Height>0</Height>
+          <PanelX>-1</PanelX>
+          <PanelY>-1</PanelY>
+          <IsSelected>false</IsSelected>
+          <IsNew>false</IsNew>
+          <IsDone>false</IsDone>
+        </Feeder>
+        <Feeder diffgr:id="Feeder8" msdata:rowOrder="7" diffgr:hasChanges="inserted">
+          <FeederID>7</FeederID>
+          <GroupID>0</GroupID>
+          <GroupNo />
+          <PanelNo />
+          <FeederNo>FEEDER_008</FeederNo>
+          <FeederType>GENERATOR</FeederType>
+          <PanelName1>GENERATOR</PanelName1>
+          <PanelName2>PANEL NAME9</PanelName2>
+          <PanelName3 />
+          <ConsumerKW>CONSUMER KW</ConsumerKW>
+          <ConsumerA>CONSUMER A8</ConsumerA>
+          <CableSqHHI>CABLE SQ (HHI)</CableSqHHI>
+          <CableSqYard>CABLE SQ Consumer8</CableSqYard>
+          <TypicalDrawingNo>TYPICAL DWG NO8</TypicalDrawingNo>
+          <CableClamp>CABLE CLAMP</CableClamp>
+          <ZctType />
+          <Width>0</Width>
+          <Depth>0</Depth>
+          <Height>0</Height>
+          <PanelX>-1</PanelX>
+          <PanelY>-1</PanelY>
+          <IsSelected>false</IsSelected>
+          <IsNew>false</IsNew>
+          <IsDone>false</IsDone>
+        </Feeder>
+        <Feeder diffgr:id="Feeder9" msdata:rowOrder="8" diffgr:hasChanges="inserted">
+          <FeederID>8</FeederID>
+          <GroupID>0</GroupID>
+          <GroupNo />
+          <PanelNo />
+          <FeederNo>FEEDER_009</FeederNo>
+          <FeederType>GENERATOR</FeederType>
+          <PanelName1>GENERATOR</PanelName1>
+          <PanelName2>PANEL NAME10</PanelName2>
+          <PanelName3 />
+          <ConsumerKW>CONSUMER KW</ConsumerKW>
+          <ConsumerA>CONSUMER A9</ConsumerA>
+          <CableSqHHI>CABLE SQ (HHI)</CableSqHHI>
+          <CableSqYard>CABLE SQ Consumer9</CableSqYard>
+          <TypicalDrawingNo>TYPICAL DWG NO9</TypicalDrawingNo>
+          <CableClamp>CABLE CLAMP</CableClamp>
+          <ZctType />
+          <Width>0</Width>
+          <Depth>0</Depth>
+          <Height>0</Height>
+          <PanelX>-1</PanelX>
+          <PanelY>-1</PanelY>
+          <IsSelected>false</IsSelected>
+          <IsNew>false</IsNew>
+          <IsDone>false</IsDone>
+        </Feeder>
+        <Feeder diffgr:id="Feeder10" msdata:rowOrder="9" diffgr:hasChanges="inserted">
+          <FeederID>9</FeederID>
+          <GroupID>0</GroupID>
+          <GroupNo />
+          <PanelNo />
+          <FeederNo>FEEDER_010</FeederNo>
+          <FeederType>GENERATOR</FeederType>
+          <PanelName1>GENERATOR</PanelName1>
+          <PanelName2>PANEL NAME11</PanelName2>
+          <PanelName3 />
+          <ConsumerKW>CONSUMER KW</ConsumerKW>
+          <ConsumerA>CONSUMER A10</ConsumerA>
+          <CableSqHHI>CABLE SQ (HHI)</CableSqHHI>
+          <CableSqYard>CABLE SQ Consumer10</CableSqYard>
+          <TypicalDrawingNo>TYPICAL DWG NO10</TypicalDrawingNo>
+          <CableClamp>CABLE CLAMP</CableClamp>
+          <ZctType />
+          <Width>0</Width>
+          <Depth>0</Depth>
+          <Height>0</Height>
+          <PanelX>-1</PanelX>
+          <PanelY>-1</PanelY>
+          <IsSelected>false</IsSelected>
+          <IsNew>false</IsNew>
+          <IsDone>false</IsDone>
+        </Feeder>
+        <Feeder diffgr:id="Feeder11" msdata:rowOrder="10" diffgr:hasChanges="inserted">
+          <FeederID>10</FeederID>
+          <GroupID>0</GroupID>
+          <GroupNo />
+          <PanelNo />
+          <FeederNo>FEEDER_011</FeederNo>
+          <FeederType>GENERATOR</FeederType>
+          <PanelName1>GENERATOR</PanelName1>
+          <PanelName2>PANEL NAME12</PanelName2>
+          <PanelName3 />
+          <ConsumerKW>CONSUMER KW</ConsumerKW>
+          <ConsumerA>CONSUMER A11</ConsumerA>
+          <CableSqHHI>CABLE SQ (HHI)</CableSqHHI>
+          <CableSqYard>CABLE SQ Consumer11</CableSqYard>
+          <TypicalDrawingNo>TYPICAL DWG NO11</TypicalDrawingNo>
+          <CableClamp>CABLE CLAMP</CableClamp>
+          <ZctType />
+          <Width>0</Width>
+          <Depth>0</Depth>
+          <Height>0</Height>
+          <PanelX>-1</PanelX>
+          <PanelY>-1</PanelY>
+          <IsSelected>false</IsSelected>
+          <IsNew>false</IsNew>
+          <IsDone>false</IsDone>
+        </Feeder>
+        <Feeder diffgr:id="Feeder12" msdata:rowOrder="11" diffgr:hasChanges="inserted">
+          <FeederID>11</FeederID>
+          <GroupID>0</GroupID>
+          <GroupNo />
+          <PanelNo />
+          <FeederNo>FEEDER_012</FeederNo>
+          <FeederType>GENERATOR</FeederType>
+          <PanelName1>GENERATOR</PanelName1>
+          <PanelName2>PANEL NAME13</PanelName2>
+          <PanelName3 />
+          <ConsumerKW>CONSUMER KW</ConsumerKW>
+          <ConsumerA>CONSUMER A12</ConsumerA>
+          <CableSqHHI>CABLE SQ (HHI)</CableSqHHI>
+          <CableSqYard>CABLE SQ Consumer12</CableSqYard>
+          <TypicalDrawingNo>TYPICAL DWG NO12</TypicalDrawingNo>
+          <CableClamp>CABLE CLAMP</CableClamp>
+          <ZctType />
+          <Width>0</Width>
+          <Depth>0</Depth>
+          <Height>0</Height>
+          <PanelX>-1</PanelX>
+          <PanelY>-1</PanelY>
+          <IsSelected>false</IsSelected>
+          <IsNew>false</IsNew>
+          <IsDone>false</IsDone>
+        </Feeder>
+        <Feeder diffgr:id="Feeder13" msdata:rowOrder="12" diffgr:hasChanges="inserted">
+          <FeederID>12</FeederID>
+          <GroupID>0</GroupID>
+          <GroupNo />
+          <PanelNo />
+          <FeederNo>FEEDER_013</FeederNo>
+          <FeederType>GENERATOR</FeederType>
+          <PanelName1>GENERATOR</PanelName1>
+          <PanelName2>PANEL NAME14</PanelName2>
+          <PanelName3 />
+          <ConsumerKW>CONSUMER KW</ConsumerKW>
+          <ConsumerA>CONSUMER A13</ConsumerA>
+          <CableSqHHI>CABLE SQ (HHI)</CableSqHHI>
+          <CableSqYard>CABLE SQ Consumer13</CableSqYard>
+          <TypicalDrawingNo>TYPICAL DWG NO13</TypicalDrawingNo>
+          <CableClamp>CABLE CLAMP</CableClamp>
+          <ZctType />
+          <Width>0</Width>
+          <Depth>0</Depth>
+          <Height>0</Height>
+          <PanelX>-1</PanelX>
+          <PanelY>-1</PanelY>
+          <IsSelected>false</IsSelected>
+          <IsNew>false</IsNew>
+          <IsDone>false</IsDone>
+        </Feeder>
+        <Feeder diffgr:id="Feeder14" msdata:rowOrder="13" diffgr:hasChanges="inserted">
+          <FeederID>13</FeederID>
+          <GroupID>0</GroupID>
+          <GroupNo />
+          <PanelNo />
+          <FeederNo>FEEDER_014</FeederNo>
+          <FeederType>GENERATOR</FeederType>
+          <PanelName1>GENERATOR</PanelName1>
+          <PanelName2>PANEL NAME15</PanelName2>
+          <PanelName3 />
+          <ConsumerKW>CONSUMER KW</ConsumerKW>
+          <ConsumerA>CONSUMER A14</ConsumerA>
+          <CableSqHHI>CABLE SQ (HHI)</CableSqHHI>
+          <CableSqYard>CABLE SQ Consumer14</CableSqYard>
+          <TypicalDrawingNo>TYPICAL DWG NO14</TypicalDrawingNo>
+          <CableClamp>CABLE CLAMP</CableClamp>
+          <ZctType />
+          <Width>0</Width>
+          <Depth>0</Depth>
+          <Height>0</Height>
+          <PanelX>-1</PanelX>
+          <PanelY>-1</PanelY>
+          <IsSelected>false</IsSelected>
+          <IsNew>false</IsNew>
+          <IsDone>false</IsDone>
+        </Feeder>
+        <Feeder diffgr:id="Feeder15" msdata:rowOrder="14" diffgr:hasChanges="inserted">
+          <FeederID>14</FeederID>
+          <GroupID>0</GroupID>
+          <GroupNo />
+          <PanelNo />
+          <FeederNo>FEEDER_015</FeederNo>
+          <FeederType>GENERATOR</FeederType>
+          <PanelName1>GENERATOR</PanelName1>
+          <PanelName2>PANEL NAME16</PanelName2>
+          <PanelName3 />
+          <ConsumerKW>CONSUMER KW</ConsumerKW>
+          <ConsumerA>CONSUMER A15</ConsumerA>
+          <CableSqHHI>CABLE SQ (HHI)</CableSqHHI>
+          <CableSqYard>CABLE SQ Consumer15</CableSqYard>
+          <TypicalDrawingNo>TYPICAL DWG NO15</TypicalDrawingNo>
+          <CableClamp>CABLE CLAMP</CableClamp>
+          <ZctType />
+          <Width>0</Width>
+          <Depth>0</Depth>
+          <Height>0</Height>
+          <PanelX>-1</PanelX>
+          <PanelY>-1</PanelY>
+          <IsSelected>false</IsSelected>
+          <IsNew>false</IsNew>
+          <IsDone>false</IsDone>
+        </Feeder>
+        <Feeder diffgr:id="Feeder16" msdata:rowOrder="15" diffgr:hasChanges="inserted">
+          <FeederID>15</FeederID>
+          <GroupID>0</GroupID>
+          <GroupNo />
+          <PanelNo />
+          <FeederNo>FEEDER_016</FeederNo>
+          <FeederType>GENERATOR</FeederType>
+          <PanelName1>GENERATOR</PanelName1>
+          <PanelName2>PANEL NAME17</PanelName2>
+          <PanelName3 />
+          <ConsumerKW>CONSUMER KW</ConsumerKW>
+          <ConsumerA>CONSUMER A16</ConsumerA>
+          <CableSqHHI>CABLE SQ (HHI)</CableSqHHI>
+          <CableSqYard>CABLE SQ Consumer16</CableSqYard>
+          <TypicalDrawingNo>TYPICAL DWG NO16</TypicalDrawingNo>
+          <CableClamp>CABLE CLAMP</CableClamp>
+          <ZctType />
+          <Width>0</Width>
+          <Depth>0</Depth>
+          <Height>0</Height>
+          <PanelX>-1</PanelX>
+          <PanelY>-1</PanelY>
+          <IsSelected>false</IsSelected>
+          <IsNew>false</IsNew>
+          <IsDone>false</IsDone>
+        </Feeder>
+        <Feeder diffgr:id="Feeder17" msdata:rowOrder="16" diffgr:hasChanges="inserted">
+          <FeederID>16</FeederID>
+          <GroupID>0</GroupID>
+          <GroupNo />
+          <PanelNo />
+          <FeederNo>FEEDER_017</FeederNo>
+          <FeederType>GENERATOR</FeederType>
+          <PanelName1>GENERATOR</PanelName1>
+          <PanelName2>PANEL NAME18</PanelName2>
+          <PanelName3 />
+          <ConsumerKW>CONSUMER KW</ConsumerKW>
+          <ConsumerA>CONSUMER A17</ConsumerA>
+          <CableSqHHI>CABLE SQ (HHI)</CableSqHHI>
+          <CableSqYard>CABLE SQ Consumer17</CableSqYard>
+          <TypicalDrawingNo>TYPICAL DWG NO17</TypicalDrawingNo>
+          <CableClamp>CABLE CLAMP</CableClamp>
+          <ZctType />
+          <Width>0</Width>
+          <Depth>0</Depth>
+          <Height>0</Height>
+          <PanelX>-1</PanelX>
+          <PanelY>-1</PanelY>
+          <IsSelected>false</IsSelected>
+          <IsNew>false</IsNew>
+          <IsDone>false</IsDone>
+        </Feeder>
+        <Feeder diffgr:id="Feeder18" msdata:rowOrder="17" diffgr:hasChanges="inserted">
+          <FeederID>17</FeederID>
+          <GroupID>0</GroupID>
+          <GroupNo />
+          <PanelNo />
+          <FeederNo>FEEDER_018</FeederNo>
+          <FeederType>GENERATOR</FeederType>
+          <PanelName1>GENERATOR</PanelName1>
+          <PanelName2>PANEL NAME19</PanelName2>
+          <PanelName3 />
+          <ConsumerKW>CONSUMER KW</ConsumerKW>
+          <ConsumerA>CONSUMER A18</ConsumerA>
+          <CableSqHHI>CABLE SQ (HHI)</CableSqHHI>
+          <CableSqYard>CABLE SQ Consumer18</CableSqYard>
+          <TypicalDrawingNo>TYPICAL DWG NO18</TypicalDrawingNo>
+          <CableClamp>CABLE CLAMP</CableClamp>
+          <ZctType />
+          <Width>0</Width>
+          <Depth>0</Depth>
+          <Height>0</Height>
+          <PanelX>-1</PanelX>
+          <PanelY>-1</PanelY>
+          <IsSelected>false</IsSelected>
+          <IsNew>false</IsNew>
+          <IsDone>false</IsDone>
+        </Feeder>
+        <Feeder diffgr:id="Feeder19" msdata:rowOrder="18" diffgr:hasChanges="inserted">
+          <FeederID>18</FeederID>
+          <GroupID>0</GroupID>
+          <GroupNo />
+          <PanelNo />
+          <FeederNo>FEEDER_019</FeederNo>
+          <FeederType>GENERATOR</FeederType>
+          <PanelName1>GENERATOR</PanelName1>
+          <PanelName2>PANEL NAME20</PanelName2>
+          <PanelName3 />
+          <ConsumerKW>CONSUMER KW</ConsumerKW>
+          <ConsumerA>CONSUMER A19</ConsumerA>
+          <CableSqHHI>CABLE SQ (HHI)</CableSqHHI>
+          <CableSqYard>CABLE SQ Consumer19</CableSqYard>
+          <TypicalDrawingNo>TYPICAL DWG NO19</TypicalDrawingNo>
+          <CableClamp>CABLE CLAMP</CableClamp>
+          <ZctType />
+          <Width>0</Width>
+          <Depth>0</Depth>
+          <Height>0</Height>
+          <PanelX>-1</PanelX>
+          <PanelY>-1</PanelY>
+          <IsSelected>false</IsSelected>
+          <IsNew>false</IsNew>
+          <IsDone>false</IsDone>
+        </Feeder>
+        <Feeder diffgr:id="Feeder20" msdata:rowOrder="19" diffgr:hasChanges="inserted">
+          <FeederID>19</FeederID>
+          <GroupID>0</GroupID>
+          <GroupNo />
+          <PanelNo />
+          <FeederNo>FEEDER_020</FeederNo>
+          <FeederType>GENERATOR</FeederType>
+          <PanelName1>GENERATOR</PanelName1>
+          <PanelName2>PANEL NAME21</PanelName2>
+          <PanelName3 />
+          <ConsumerKW>CONSUMER KW</ConsumerKW>
+          <ConsumerA>CONSUMER A20</ConsumerA>
+          <CableSqHHI>CABLE SQ (HHI)</CableSqHHI>
+          <CableSqYard>CABLE SQ Consumer20</CableSqYard>
+          <TypicalDrawingNo>TYPICAL DWG NO20</TypicalDrawingNo>
+          <CableClamp>CABLE CLAMP</CableClamp>
+          <ZctType />
+          <Width>0</Width>
+          <Depth>0</Depth>
+          <Height>0</Height>
+          <PanelX>-1</PanelX>
+          <PanelY>-1</PanelY>
+          <IsSelected>false</IsSelected>
+          <IsNew>false</IsNew>
+          <IsDone>false</IsDone>
+        </Feeder>
+        <Feeder diffgr:id="Feeder21" msdata:rowOrder="20" diffgr:hasChanges="inserted">
+          <FeederID>20</FeederID>
+          <GroupID>0</GroupID>
+          <GroupNo />
+          <PanelNo />
+          <FeederNo>FEEDER_021</FeederNo>
+          <FeederType>GENERATOR</FeederType>
+          <PanelName1>GENERATOR</PanelName1>
+          <PanelName2>PANEL NAME22</PanelName2>
+          <PanelName3 />
+          <ConsumerKW>CONSUMER KW</ConsumerKW>
+          <ConsumerA>CONSUMER A21</ConsumerA>
+          <CableSqHHI>CABLE SQ (HHI)</CableSqHHI>
+          <CableSqYard>CABLE SQ Consumer21</CableSqYard>
+          <TypicalDrawingNo>TYPICAL DWG NO21</TypicalDrawingNo>
+          <CableClamp>CABLE CLAMP</CableClamp>
+          <ZctType />
+          <Width>0</Width>
+          <Depth>0</Depth>
+          <Height>0</Height>
+          <PanelX>-1</PanelX>
+          <PanelY>-1</PanelY>
+          <IsSelected>false</IsSelected>
+          <IsNew>false</IsNew>
+          <IsDone>false</IsDone>
+        </Feeder>
+        <Feeder diffgr:id="Feeder22" msdata:rowOrder="21" diffgr:hasChanges="inserted">
+          <FeederID>21</FeederID>
+          <GroupID>0</GroupID>
+          <GroupNo />
+          <PanelNo />
+          <FeederNo>FEEDER_022</FeederNo>
+          <FeederType>GENERATOR</FeederType>
+          <PanelName1>GENERATOR</PanelName1>
+          <PanelName2>PANEL NAME23</PanelName2>
+          <PanelName3 />
+          <ConsumerKW>CONSUMER KW</ConsumerKW>
+          <ConsumerA>CONSUMER A22</ConsumerA>
+          <CableSqHHI>CABLE SQ (HHI)</CableSqHHI>
+          <CableSqYard>CABLE SQ Consumer22</CableSqYard>
+          <TypicalDrawingNo>TYPICAL DWG NO22</TypicalDrawingNo>
+          <CableClamp>CABLE CLAMP</CableClamp>
+          <ZctType />
+          <Width>0</Width>
+          <Depth>0</Depth>
+          <Height>0</Height>
+          <PanelX>-1</PanelX>
+          <PanelY>-1</PanelY>
+          <IsSelected>false</IsSelected>
+          <IsNew>false</IsNew>
+          <IsDone>false</IsDone>
+        </Feeder>
+      </DataSet1>
+    </diffgr:diffgram>
+  </DataSet>
+  <IsPanelInsertMode>false</IsPanelInsertMode>
+</MvProject>
